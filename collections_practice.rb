@@ -31,10 +31,12 @@ end
     array.select {|element| element.include?("a")}
 end
 
-def sum_array
-    #sum all the numbers in the following array
-
+def sum_array (array)
+  array.inject do |sum, num|
+    sum + num
+  end
 end
+
 def add_s(array)
     #Add an "s" to each word in the array except for the 2nd element in
   array.collect.with_index do |word, index|
