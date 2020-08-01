@@ -20,7 +20,7 @@ def reverse_array(array)
 end
 def kesha_maker
   #  taking an array as an input, change the 3rd character of each element to a dollar sign. )
-  array.split('').each { |$| 
+  array.split('').each { |$|
       puts $
   }
 end
