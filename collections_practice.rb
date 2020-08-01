@@ -18,7 +18,7 @@ def reverse_array(array)
   #  reverse the order of an array of integers
   array.reverse
 end
-def kesha_maker
+def kesha_maker(input)
   #  taking an array as an input, change the 3rd character of each element to a dollar sign. )
   input.each_char {|"$"|}
 end
