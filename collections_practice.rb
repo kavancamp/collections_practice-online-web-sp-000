@@ -18,14 +18,19 @@ def reverse_array(array)
   #  reverse the order of an array of integers
   array.reverse
 end
-def kesha_maker(input)
-  #  taking an array as an input, change the 3rd character of each element to a dollar sign. )
-  input.each_char {|$|}
-end
-  def find_a
-    #find all words that begin with "a" in the following array
 
+def kesha_maker (array)
+  array.collect do |element|
+    element[2] = "$"
+    element
+  end
 end
+
+  def find_a(array)
+    #find all words that begin with "a" in the following array
+    array.select {|element| element.include?("a")}
+end
+
 def sum_array
     #sum all the numbers in the following array
 
