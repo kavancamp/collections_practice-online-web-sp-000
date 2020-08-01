@@ -14,8 +14,9 @@ def swap_elements(array)
    #swap the second and third elements of an array
    array[0], array[1], array[2] = array[0], array[2], array[1]
 end
-def reverse_array
+def reverse_array(array)
   #  reverse the order of an array of integers
+  array[i].reverse
 end
 def kesha_maker
   #  taking an array as an input, change the 3rd character of each element to a dollar sign. )
