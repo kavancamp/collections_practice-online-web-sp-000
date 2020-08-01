@@ -26,9 +26,10 @@ def kesha_maker (array)
   end
 end
 
-  def find_a(array)
-    #find all words that begin with "a" in the following array
-    array.select {|element| element.include?("a")}
+def find_a (array)
+  array.select do |word|
+    word.chr == "a"
+  end
 end
 
 def sum_array (array)
